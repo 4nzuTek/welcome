@@ -23,7 +23,9 @@ document.addEventListener('keydown', (event) => {
     if (event.key === ' ' && !isGameActive) {
         isGameActive = true;
         block.style.bottom = '700px'; // ブロックの初期位置を設定
-        blockFallingSpeed = 1; // 初期落下速度を設定
+        score = 0; //スコアリセット
+        scoreDisplay.textContent = `Score: ${score}`; // スコア表示を更新
+        blockFallingSpeed = 0.1; // 初期落下速度を設定
         blockIsRising = false; // ブロックが上昇していない状態にする
         document.getElementById('game-container').classList.add('active');
         gameLoop();
