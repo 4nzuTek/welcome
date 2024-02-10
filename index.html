@@ -1,22 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Game Title</title>
-    <link rel="stylesheet" href="styles.css"> <!-- CSSファイルのリンク -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>4nzuGames</title>
+  <link rel="stylesheet" href="sanitize.css">
+  <link rel="stylesheet" href="./styles.css">
 </head>
+
 <body>
-    <div id="game-container">
-        <div id="ground"></div>
-        <div id="red-line"></div>
-        <div id="block"></div>
-        <div id="score">Score: 0</div>
-        <div id="instructions">
-            <p>スペースキーを押してゲームスタート！</p>
-            <p>赤い線とブロックが重なったらエンターキーを押そう！</p>
+  <!-- <div class="title">
+      <img src="images/4nzu_game_pagelogo.png" alt="タイトル画像" #title-image>
+      <div>
+        <img src="images/4nzu_chan_mini_01.png" alt="キャラクター画像" #character-image>
+      </div>
+  </div> -->
+
+  <div>
+    <img src="images/4nzu_welcome_background.png" alt="" id="welcome-background-image">
+  </div>
+
+  <div class="container">
+    <header>
+      <div class="title-section">
+        <img src="images/4nzu_game_pagelogo.png" alt="あんずのプチゲーム置き場のロゴ" id="title-image">
+        <img src="images/4nzu_chan_mini_01.png" alt="キャラクター画像" id="character-image">
+      </div>
+      <div class="header-content">
+        <a href="https://twitter.com/4nzuTek" target="_blank">
+          <img src="images/twitter_icon.jpg" alt="Twitterアイコン" id="twitter-icon">
+        </a>
+        <a href="https://soundcloud.com/4nzu2" target="_blank">
+          <img src="images/soundcloud_icon.jpg" alt="SoundCloudアイコン" id="soundcloud-icon">
+        </a>
+      </div>
+    </header>
+    <p class="site-description">頑張ってゲームを作るよ！</p>
+
+    <nav class="pagination">
+      <a href="#">前へ</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">次へ</a>
+    </nav>
+
+    <div class="games-container">
+      <!-- 以下のブロックを5回繰り返します。 -->
+      <div class="game">
+        <div class="game-contents">
+          <a href="game01/index.html">
+            <img class="game-screenshot" src="images/game-screenshot.png" alt="ゲームスクショ">
+          </a>
         </div>
+        <div class="game-info">
+          <a href="game01/index.html" class="game-title">Leap Line</a>
+          <p class="game-version">2024/2/11 ver.1.0.0</p>
+          <p class="game-comment">
+            処女作。あんずが作ったというよりchatGPTが作ったという方が正しい。
+          </p>
+        </div>
+      </div>
+
+      <div class="game">
+        <div class="game-contents">
+          <img class="game-screenshot" src="images/game-screenshot2.png" alt="ゲームスクショ">
+        </div>
+        <div class="game-info">
+          <a href="" class="game-title">ゲームタイトル</a>
+          <p class="game-version">バージョン情報</p>
+          <p class="game-comment">一言コメント</p>
+        </div>
+      </div>
+
+      <div class="game">
+        <div class="game-contents">
+          <img class="game-screenshot" src="images/game-screenshot2.png" alt="ゲームスクショ">
+        </div>
+        <div class="game-info">
+          <a href="" class="game-title">ゲームタイトル</a>
+          <p class="game-version">バージョン情報</p>
+          <p class="game-comment">一言コメント</p>
+        </div>
+      </div>
+      <!-- 繰り返し終了 -->
     </div>
-    <script src="game.js"></script> <!-- ゲームのロジックを追加するためのJavaScriptファイル -->
+
+    <nav class="pagination">
+      <a href="#">前へ</a>
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <a href="#">次へ</a>
+    </nav>
+  </div>
+  <div>
+    <footer>
+      <img src="images/4nzu_logo.png" alt="AnzuTekno" id="AnzuTekno-logo-image">
+      <p></p>
+    </footer>
+  </div>
+
+
+
+
+
+  <!-- <script src="./main.js"></script> -->
 </body>
+
 </html>

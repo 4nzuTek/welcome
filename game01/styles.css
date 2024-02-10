@@ -1,0 +1,64 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+#instructions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000; /* 文字色を黒に変更 */
+    font-size: 18px;
+    font-family: 'Arial', sans-serif;
+}
+
+#game-container.active #instructions {
+    display: block; /* ゲームが開始されたら表示 */
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+#ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; /* 地面の高さ */
+    background-color: #333;
+}
+
+#red-line {
+    position: absolute;
+    bottom: 100px; /* 赤い線の高さ */
+    left: 0;
+    width: 100%;
+    height: 20px; /* 赤い線の太さ */
+    background-color: #f00;
+}
+
+#block {
+    position: absolute;
+    bottom: 550px; /* 例: 赤い線よりも上に配置 */
+    left: 50%; /* 画面中央に配置 */
+    transform: translateX(-50%); /* 中央揃え */
+    width: 50px;
+    height: 50px;
+    background-color: #00f;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    color: #000;
+}
