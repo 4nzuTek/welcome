@@ -78,6 +78,15 @@ header {
     height: 40px;
     border-radius: 10px;
     margin-left: 5px;
+    transition: filter 0.3s ease, border-color 0.3s ease;
+}
+
+#twitter-icon:hover,
+#soundcloud-icon:hover {
+    filter: brightness(1.2);
+    /* 画像を少し明るくする */
+    border: 2px solid var(--hover-color);
+    /* 赤い境界線を追加 */
 }
 
 #title-image {
@@ -132,6 +141,7 @@ header {
 
 .pagination a:hover {
     color: var(--hover-color);
+    font-weight: bold;
     /* ホバー時に赤色にする */
 }
 
@@ -166,16 +176,16 @@ header {
     height: calc(100% - 10px);
     border-radius: 10px;
     object-fit: cover;
+    transition: filter 0.3s ease, border-color 0.3s ease;
+    /* トランジションを境界線にも追加 */
 }
 
-.game-screenshot {
-    transition: filter 0.3s ease, border-color 0.3s ease; /* トランジションを境界線にも追加 */
-  }
-
-  .game-screenshot:hover {
-    filter: brightness(1.2); /* 画像を少し明るくする */
-    border: 2px solid var(--hover-color); /* 赤い境界線を追加 */
-  }
+.game-screenshot:hover {
+    filter: brightness(1.2);
+    /* 画像を少し明るくする */
+    border: 2px solid var(--hover-color);
+    /* 赤い境界線を追加 */
+}
 
 .game-info {
     flex: 1;
